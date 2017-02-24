@@ -1,0 +1,4 @@
+<div id="modal-container" title="File Uploader">
+   <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+<a id="modal-btn" class="fileupload-btn" href="#">Upload File</a>

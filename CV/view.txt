@@ -1,0 +1,39 @@
+ var cv = this;
+ var modalContainer;
+  var dialogOptions = {
+ 		autoOpen: false,
+ 		buttons: [
+ 					{
+ 						text: "Cancel",
+					      icons: {
+					        primary: "ui-icon-close"
+					      },
+					      click: function() {
+					        $( this ).dialog( "close" );
+					      }
+ 					},
+ 					{
+ 						text: "Upload",
+					      icons: {
+					        primary: "ui-icon-transfer-e-w"
+					      },
+					      click: function() {
+					        console.log("transferting file");
+					        $( this ).dialog( "close" );
+					      }
+ 					}
+ 				],
+ 		show: 'puff',
+ 		hide: 'puff', // Hide the dialog with 500ms fade effect
+ 		modal: true, // Overlay on top of others
+ 		title: 'File Upload'
+ }
+ 
+ require(["jquery", "jqueryui"], function($) {
+ 	modalContainer = $('div#modal-container', cv.context.element);
+ 	modalContainer.dialog(dialogOptions);
+ 	
+ 	$('a#modal-btn', cv.context.element).on("click", function() {
+ 		modalContainer.dialog("open");
+ 	});
+ });

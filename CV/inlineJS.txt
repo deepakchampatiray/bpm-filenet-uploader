@@ -1,0 +1,14 @@
+/*
+@dojoConfigUpdateStart
+dojoConfig.packages.push({
+	name: 'jquery',
+	location: '//code.jquery.com/',
+	main: 'jquery-1.12.4.min'
+});
+dojoConfig.packages.push({
+	name: 'jqueryui',
+	location: '//code.jquery.com/ui/1.12.1/',
+	main: 'jquery-ui.min'
+});
+@dojoConfigUpdateEnd
+*/
